@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bad by flex</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration:none ;
+            color:rgb(225, 220, 220);
+            background-color: gray;
+            padding: 7px;
+        }
+        .box{
+            padding: 7px;
+        }
+        section{
+            margin-top: 90px;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        form{
+            /* border: 1px solid green; */
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        Input{
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box">
+            <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Contant</a>
+        <a href="">Flex</a>
+        </div>
+        <a href="">Login</a> 
+    </nav>
+
+    <section>
+        <form action="">
+            <h1>Fill the  form</h1>
+            <input type="text" name="" id="" placeholder="Enter Your Name" required>
+            <input type="email" name="" id="" placeholder="Enter Your Email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="submit" value="Login">
+            
+        </form>
+    </section>
+</body>
+</html>
