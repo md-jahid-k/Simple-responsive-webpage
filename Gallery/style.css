@@ -1,0 +1,36 @@
+h2{
+    font-size: 6vi;
+    text-align: center;
+}
+body{
+    justify-items: center;
+}
+.container{
+    width: 90%;
+    justify-items: ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.photo{
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.photo img{
+    width: 100%;
+}
+@media screen and (max-width: 576px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
